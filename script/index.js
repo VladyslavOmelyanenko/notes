@@ -10,6 +10,8 @@ notes.push(
   new Note("William Gaddis", "Quote", "Power doesn't co...")
 );
 
+let categories = ["Task", "Quote", "Idea", "Random Thought"];
+
 const inActiveNotes = document.getElementById('notes').firstElementChild.lastElementChild;
 
 
@@ -21,7 +23,7 @@ notes.forEach((note) => {
 
 
 const createButton = document.getElementById("create-button")
-createButton.addEventListener("click", createForm);
+createButton.addEventListener("click", createForm(categories));
 
 document.getElementById('add-note').addEventListener('click', createNote(inActiveNotes, activeNotes));
 

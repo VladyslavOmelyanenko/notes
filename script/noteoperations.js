@@ -26,6 +26,14 @@ const getDates = (string) => {
   return string.split(/[\s,]+/).filter((word) => !isNaN(Date.parse(word))).join(", ");
 };
 
+const formated = (str) => {
+  if (str.length > 23) {
+    return str.slice(0, 20) + "..."
+  }
+  return str;
+}
+
+
 export const addNote = (note, place, storingArray) => {
   const noteLine = document.createElement('tr');
   const td = document.createElement('td');
@@ -37,7 +45,7 @@ export const addNote = (note, place, storingArray) => {
 
   for (let key in note) {
     const td = document.createElement('td');
-    td.append(note[key]);
+    td.append(formated(note[key]));
     noteLine.append(td);
   }
 
@@ -48,12 +56,25 @@ export const addNote = (note, place, storingArray) => {
   storingArray.push(note);
 };
 
+
+
 const form = document.getElementById('create-note');
 
 
-export const createForm = (e) => {
-  form.className = form.className.replace('hidden', '');
-  e.target.className += " hidden";
+export const createForm = (categories) => {
+  return function(e) {
+    const select = document.getElementById('category');
+    const options = categories.map((element) => {
+      let option = document.createElement('option')
+      option.value = element;
+      option.append(element);
+      return option;
+    });
+    console.log(options);
+    select.append(...options);
+    form.className = form.className.replace('hidden', '');
+    e.target.className += " hidden";
+  }
 };
 
 export const createNote = (place, storingArray) => {
