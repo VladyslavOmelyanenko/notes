@@ -7,6 +7,10 @@ main {
   gap: 100px;
 }
 
+.empty {
+  opacity: 0;
+}
+
 .hidden {
   display: none;
 }
@@ -24,20 +28,21 @@ nav ul li{
 
 nav ul li a{
   text-decoration: none;
-  color: #616161;
+  color: #6b6c70;
   padding: 20px 150px 20px 30px;
   display: flex;
   border-radius: 0% 35px 35px 0;
+  width: 100px;
 }
 
 nav ul li a:hover {
-  background: #c4c6cf;
+  background: #878787;
   color: #fff;
 } 
 
 nav ul li .active {
   text-decoration: none;
-  background-color: #616161;
+  background-color: #6b6c70;
   color: #fff;
   padding: 20px 150px 20px 30px;
   display: flex;
@@ -45,13 +50,92 @@ nav ul li .active {
 }
 
 nav ul li .active:hover {
-  background-color: #616161;
+  background-color: #6b6c70;
   color: #fff;
 }
-
-
 
 nav ul li a span {
   margin-right: 30px;
 }
 
+
+table {
+  font-size: 1.2em;
+}
+
+table thead {
+  background: #878787;
+  color: #fff;
+  height: 50px;
+  font-weight: bold;
+  margin-bottom: 200px;
+}
+
+
+
+table thead tr td {
+  padding-top: 15px;
+}
+
+table thead td:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+table thead td:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+table tr td:first-child {
+  padding-left: 20px;
+}
+
+table tr td:last-child {
+  padding-right: 10px;
+}
+
+table tbody tr {
+  border-top: 30px solid white;
+  background: #e8eaf5;
+}
+
+table tbody tr td {
+  height: 30px;
+}
+
+table tbody tr:first-child {
+  border-top: 0;
+  opacity: 0;
+  padding-top: 0;
+}
+
+table tbody tr:first-child td {
+  height: 10px;
+  padding-top: 0;
+}
+
+table tbody {
+  color: #878787;
+}
+
+table tbody tr td {
+  padding-top: 12px;
+  padding-right: 20px;
+}
+
+table tbody tr td:first-child i{
+  font-size: 1.3em;
+  color: #fff;
+  background: #6b6c70;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+table tbody tr td:nth-child(2) {
+  font-weight: bold;
+  color: #6b6c70;
+}
