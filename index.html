@@ -4,11 +4,119 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="./script/main.js"></script>
+  <title>Notes</title>
+  <script src="https://kit.fontawesome.com/4cb575d2c6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style/default.css">
+  <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
+
+  <main>
+    
+    <nav>
+      <ul id="nav">
+        <li><a href="#" class="active" id="notes-tab"><span><i class="fas fa-sticky-note"></i></span> Notes</a></li>
+        <li><a href="#"  id="archive-tab"><span><i class="fa-solid fa-box"></i></span> Archive</a></li>
+        <li><a href="#"  id="trash-tab"><span><i class="fa-solid fa-trash"></i></span> Trash</a></li>
+        <li><a href="#"  id="stats-tab"><span><i class="fa-solid fa-bars-progress"></i></span> Stats</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+
+      <div id="notes" class="tab-content">
+        <table>
+      
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Created</td>
+              <td>Category</td>
+              <td>Content</td>
+              <td>Dates</td>
+              <td><i class="fa-solid fa-box"></i><i class="fa-solid fa-trash"></i></td>
+            </tr>
+          </thead>
+      
+          <tbody>
+      
+            <tr>
+              <td><i class="fa-solid fa-list-check"></i></td>
+              <td>Shopping list</td>
+              <td>April 20, 2021</td>
+              <td>Task</td>
+              <td>Tomatoes, bread</td>
+              <td></td>
+              <td>
+                <i class="fa-solid fa-pen"></i>
+                <i class="fa-solid fa-box"></i>
+                <i class="fa-solid fa-trash"></i>
+              </td>
+            </tr>
+      
+            <tr>
+              <td><i class="fa-solid fa-brain"></i></td>
+              <td>The theory of evolution</td>
+              <td>April 27, 2021</td>
+              <td>Random Thought</td>
+              <td>The evolution is so complicated it's crazy</td>
+              <td></td>
+              <td>
+                <i class="fa-solid fa-pen"></i>
+                <i class="fa-solid fa-box"></i>
+                <i class="fa-solid fa-trash"></i>
+              </td>
+            </tr>
+      
+            <tr>
+              <td><i class="fa-solid fa-lightbulb"></i></td>
+              <td>New Feature</td>
+              <td>May 05, 2021</td>
+              <td>Idea</td>
+              <td>Implement new feature called brainhacking</td>
+              <td>3/5/2021, 5/5/2021</td>
+              <td>
+                <i class="fa-solid fa-pen"></i>
+                <i class="fa-solid fa-box"></i>
+                <i class="fa-solid fa-trash"></i>
+              </td>
+            </tr>
+      
+            <tr>
+              <td><i class="fa-solid fa-quote-right"></i></td>
+              <td>William Gaddis</td>
+              <td>May 07, 2021</td>
+              <td>Quote</td>
+              <td>Power doesn't count, kindness does</td>
+              <td></td>
+              <td>
+                <i class="fa-solid fa-pen"></i>
+                <i class="fa-solid fa-box"></i>
+                <i class="fa-solid fa-trash"></i>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div id="archive" class="hidden tab-content">
+        <h1>Archive</h1>
+      </div>
+      
+      <div id="trash" class="hidden tab-content">
+        <h1>trash</h1>
+      </div>
+      
+      <div id="stats" class="hidden tab-content">
+        <h1>stats</h1>
+      </div>
+    </div>
+
+    
+    
+  </main>
+
   
+  <script src="./script/main.js"></script>
 </body>
 </html>

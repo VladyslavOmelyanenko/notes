@@ -1,0 +1,57 @@
+
+main {
+  padding-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 100px;
+}
+
+.hidden {
+  display: none;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul li{
+  font-size: 1.6em;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #616161;
+  padding: 20px 150px 20px 30px;
+  display: flex;
+  border-radius: 0% 35px 35px 0;
+}
+
+nav ul li a:hover {
+  background: #c4c6cf;
+  color: #fff;
+} 
+
+nav ul li .active {
+  text-decoration: none;
+  background-color: #616161;
+  color: #fff;
+  padding: 20px 150px 20px 30px;
+  display: flex;
+  border-radius: 0% 35px 35px 0;
+}
+
+nav ul li .active:hover {
+  background-color: #616161;
+  color: #fff;
+}
+
+
+
+nav ul li a span {
+  margin-right: 30px;
+}
+
