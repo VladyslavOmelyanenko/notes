@@ -1,2 +1,3 @@
 import('./tabs.js');
-import('./notes.js');
+import('./index.js');
+

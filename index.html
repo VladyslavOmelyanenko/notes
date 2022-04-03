@@ -47,67 +47,30 @@
 
             <tr><td></td></tr>
       
-            <tr>
-              <td><i class="fa-solid fa-list-check"></i></td>
-              <td>Shopping list</td>
-              <td>April 20, 2021</td>
-              <td>Task</td>
-              <td>Tomatoes, bread</td>
-              <td></td>
-              <td>
-                <i class="fa-solid fa-pen"></i>
-                <i class="fa-solid fa-box"></i>
-                <i class="fa-solid fa-trash"></i>
-              </td>
-            </tr>
-      
-            <tr>
-              <td><i class="fa-solid fa-brain"></i></td>
-              <td>The theory of evolut...</td>
-              <td>April 27, 2021</td>
-              <td>Random Thought</td>
-              <td>The evolution...</td>
-              <td></td>
-              <td>
-                <i class="fa-solid fa-pen"></i>
-                <i class="fa-solid fa-box"></i>
-                <i class="fa-solid fa-trash"></i>
-              </td>
-            </tr>
-      
-            <tr>
-              <td><i class="fa-solid fa-lightbulb"></i></td>
-              <td>New Feature</td>
-              <td>May 05, 2021</td>
-              <td>Idea</td>
-              <td>Implement new...g</td>
-              <td>3/5/2021, 5/5/2021</td>
-              <td>
-                <i class="fa-solid fa-pen"></i>
-                <i class="fa-solid fa-box"></i>
-                <i class="fa-solid fa-trash"></i>
-              </td>
-            </tr>
-      
-            <tr>
-              <td><i class="fa-solid fa-quote-right"></i></td>
-              <td>William Gaddis</td>
-              <td>May 07, 2021</td>
-              <td>Quote</td>
-              <td>Power doesn't co...</td>
-              <td></td>
-              <td>
-                <i class="fa-solid fa-pen"></i>
-                <i class="fa-solid fa-box"></i>
-                <i class="fa-solid fa-trash"></i>
-              </td>
-            </tr>
+
           </tbody>
         </table>
+        <div class="wrapper">
+          <form id="create-note" class="hidden">
+            <input type="text" id="title" placeholder="Title" name="Title">
+            <select name="category" id="category">
+              <option value="" disabled selected>Choose a category</option>
+              <option value="Task">Task</option>
+              <option value="Quote">Quote</option>
+              <option value="Idea">Idea</option>
+              <option value="Random Thought">Random Thought</option>
+            </select>
+            <textarea name="content" id="content" placeholder="Take a note..." cols="30"></textarea>
+            <button class="btn" id="add-note">Add</button>
+          </form>
+        </div>
+        <button id="create-button" class="btn">Create note</button>
+
       </div>
       
       <div id="archive" class="hidden tab-content">
-        <table>
+        <h1>Archive</h1>
+        <!-- <table>
         
           <thead>
             <tr>
@@ -187,11 +150,12 @@
               </td>
             </tr>
           </tbody>
-        </table>
+        </table> -->
       </div>
       
       <div id="trash" class="hidden tab-content">
-        <table>
+        <h1>Trash</h1>
+        <!-- <table>
         
           <thead>
             <tr>
@@ -271,7 +235,7 @@
               </td>
             </tr>
           </tbody>
-        </table>
+        </table> -->
       </div>
       
       <div id="stats" class="hidden tab-content">
